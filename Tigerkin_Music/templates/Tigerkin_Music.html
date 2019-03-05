@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0060)http://www.17sucai.com/preview/197117/2014-09-18/1/demo.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Tigerkin Website Music Radio</title>
+<link rel="stylesheet" href="../static/css/style.css">
+<script src="../static/js/jquery-1.7.2.min.js"></script>
+<style>
+  footer{
+  position: fixed;
+  width: 100%;
+  height: 24px;
+  bottom: 0;
+  padding: 10px 10px;
+  text-align: center;
+}
+footer ,footer a,footer div,a div{
+	height: 24px;
+	color: #066197;
+	line-height: 24px;
+}
+footer a,footer div,a div{
+	display: inline-block;
+}
+footer a img{
+	border-style:none;
+	width: 20px;
+	height: 20px;
+	margin-bottom: 4px; 
+	vertical-align: middle;
+}
+</style>
+</head>
+<body>
+   
+<div id="background"></div>
+<div id="player">
+	<div class="cover"><img src="" alt=""></div>
+	<div class="ctrl">
+		<div class="tag"><strong></strong><span class="artist"></span><span class="album"></span></div>
+		<div class="control">
+			<div class="left">
+				<div class="rewind icon"></div>
+				<div class="playback icon playing"></div>
+				<div class="fastforward icon"></div>
+			</div>
+			<div class="volume right">
+				<div class="mute icon left"></div>
+				<div class="slider left ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
+					<div class="pace" style="width: 0%;"></div>
+				<a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 0%;"></a></div>
+			</div>
+		</div>
+		<div class="progress">
+			<div class="slider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
+				<div class="loaded" style="width: 100%;"></div>
+				<div class="pace" style="width: 0%;"></div>
+			<a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 0%;"></a></div>
+			<div class="timer left">0:00</div>
+			<div class="right">
+				<div class="repeat icon"></div>
+				<div class="shuffle icon"></div>
+			</div>
+		</div>
+	</div>
+<audio><source src=""><source src=""></audio></div>
+<ul id="playlist"></ul>
+<footer>
+      <div>&copy;2019-2020&nbsp;</div>
+      <a href="http://zhangzhuo.online:8080/">
+      	<img src="../static/img/Tigerkin.png" />
+      	<div>Tigerkin&nbsp;Website&nbsp;</div>
+      </a>
+      <div>Music&nbsp;Radio&nbsp;&nbsp;Powered&nbsp;by&nbsp;</div>
+      <a href="https://y.qq.com/">
+      	<img src="../static/img/QQMusic.png" />
+      	<div style="color: #0a0">QQ音乐</div>
+      </a>
+</footer>
+<script src="../static/js/jquery-ui-1.8.17.custom.min.js"></script>
+<script src="../static/js/script.js"></script>
+<script>
+	var play_li= document.getElementsByTagName('li');
+	for (var i = 0; i < play_li.length; i++) {
+		play_li[i].style.overflow='hidden';
+		play_li[i].style.display='inline-block';
+		play_li[i].style.margin='0 5px'
+	}
+</script>
+</body></html>
